@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 43.7rem;
+  background: rgb(63, 94, 251);
+  background: linear-gradient(
+    86deg,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(23, 23, 58, 1) 44%
+  );
+}
+#main {
+  background-color: #f3c9c9;
+  padding: 20px;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  row-gap: 5px;
+  column-gap: 5px;
+  box-shadow: inset 5px 5px 12px #ffffff 5px 5px 12px rgba(0, 0, 0, 0.16);
+  height: 470px;
+}
+
+#inputbox {
+  grid-column: span 4 !important;
+}
+.ing {
+  grid-column: span 2 !important;
+  background-color: burlywood !important;
+}
+.ing:hover {
+  background-color: red !important;
+}
+
+#inputbox {
+  border-color: black;
+  border-radius: 20px;
+  box-shadow: inset 0 0 0 0 #833ab4;
+  color: #54b3d6;
+  padding: 0 0.25rem;
+  margin: 0 -0.25rem;
+}
+
+#inputbox {
+  color: rgba(23, 23, 58, 1);
+  font-family: "Poppins", sans-serif;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+#button {
+  border-radius: 15px;
+  font-size: larger;
+  border-color: transparent;
+}
+#button:hover {
+  background-color: #833ab4;
+  transition: 1s;
+}
+
+@media screen and (max-width: 926px) {
+  #main {
+    grid-template-columns: 150px 150px 150px 150px;
+  }
+}
+
+@media screen and (max-width: 706px) {
+  #main {
+    grid-template-columns: 110px 110px 110px 110px;
+  }
+}
+
+@media screen and (max-width: 554px) {
+  #main {
+    grid-template-columns: 95px 95px 95px 95px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  #main {
+    grid-template-columns: 50px 50px 50px 50px;
+  }
+}
